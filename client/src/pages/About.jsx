@@ -6,28 +6,28 @@ export default function About() {
       <div className='max-w-2xl mx-auto p-3 text-center'>
         <div>
           <h1 className='text-3xl font font-semibold text-center my-7'>
-            About Sahand's Blog
+            About BlogHive
           </h1>
           <div className='text-md text-gray-500 flex flex-col gap-6'>
             <p>
-              Welcome to Sahand's Blog! This blog was created by Sahand Ghavidel
-              as a personal project to share his thoughts and ideas with the
-              world. Sahand is a passionate developer who loves to write about
-              technology, coding, and everything in between.
+              Welcome to BogHive. This blog was created as a personal project to share ideas, 
+              stories, and insights with the world. Here, we explore a variety of topics including 
+              Food & Drink, Tech & Science, and Tourism. Our goal is to inspire curiosity, provide 
+              useful information, and entertain readers with engaging content across all interests.
             </p>
 
             <p>
-              On this blog, you'll find weekly articles and tutorials on topics
-              such as web development, software engineering, and programming
-              languages. Sahand is always learning and exploring new
-              technologies, so be sure to check back often for new content!
-            </p>
+              On this blog, you'll find regular articles and stories on a variety of topics, 
+              including Food & Drink, Tech & Science, and Tourism. We explore delicious recipes, 
+              the latest tech trends, travel guides, and inspiring experiences from around the world. 
+              Be sure to check back often for fresh content and new insights!
 
             <p>
-              We encourage you to leave comments on our posts and engage with
-              other readers. You can like other people's comments and reply to
-              them as well. We believe that a community of learners can help
-              each other grow and improve.
+             We encourage you to leave comments on our posts and engage with other readers. 
+             Share your thoughts, reply to others, and like comments you enjoy. We believe
+              that a community of curious minds can inspire each other, spark new ideas, 
+              and make exploring these topics even more enjoyable
+            </p>
             </p>
           </div>
         </div>

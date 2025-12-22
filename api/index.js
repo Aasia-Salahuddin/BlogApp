@@ -21,7 +21,7 @@ app.use(
     origin:
       process.env.NODE_ENV === 'production'
         ? [
-            'https://blog.100jsprojects.com',
+            //'https://blog.100jsprojects.com',
             'https://mern-blog-client-steel.vercel.app',
             /\.vercel\.app$/,
           ]
@@ -31,6 +31,7 @@ app.use(
     allowedHeaders: ['Content-Type', 'Authorization', 'x-requested-with'],
   })
 );
+// MongoDB connection for serverless
 let isConnected = false;
 const connectDB = async () => {
   if (isConnected) return;
@@ -53,7 +54,8 @@ const connectDB = async () => {
 
 // Middleware
 app.use(express.json());
-app.use(cookieParser());
+app.use(cookieParser()); //Required for cookie-based authentication
+
 
 // Database middleware (only for endpoints that need DB)
 const connectMiddleware = async (req, res, next) => {
