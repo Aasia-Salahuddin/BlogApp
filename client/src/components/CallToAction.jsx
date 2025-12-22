@@ -11,7 +11,7 @@ export default function CallToAction() {
             Discover interesting posts, tips, and stories on our website.
         </p>
         <a
-          href='https://your-frontend.vercel.app/'
+          href='blog-hive-app.vercel.app'
           target='_blank'
           rel='noopener noreferrer'
         >
