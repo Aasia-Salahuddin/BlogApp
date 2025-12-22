@@ -21,7 +21,6 @@ app.use(
     origin:
       process.env.NODE_ENV === 'production'
         ? [
-            //'https://blog.100jsprojects.com',
             'blog-hive-app.vercel.app',
             /\.vercel\.app$/,
           ]
