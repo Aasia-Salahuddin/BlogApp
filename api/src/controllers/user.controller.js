@@ -66,7 +66,7 @@ export const deleteUser = async (req, res, next) => {
   }
 };
 
-/*export const signout = (req, res, next) => {
+export const signout = (req, res, next) => {
   try {
     res
       .clearCookie('access_token')
@@ -75,18 +75,7 @@ export const deleteUser = async (req, res, next) => {
   } catch (error) {
     next(error);
   }
-};*/
-export const signOut = (req, res) => {
-  res
-    .clearCookie('access_token', {
-      httpOnly: true,
-      sameSite: 'none',
-      secure: true,
-    })
-    .status(200)
-    .json({ message: 'User signed out successfully' });
 };
-
 
 export const getUsers = async (req, res, next) => {
   if (!req.user.isAdmin) {
