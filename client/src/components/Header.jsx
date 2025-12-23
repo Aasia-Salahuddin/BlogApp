@@ -24,7 +24,7 @@ export default function Header() {
     }
   }, [location.search]);
 
-  const handleSignout = async () => {
+  /*const handleSignout = async () => {
     try {
       const res = await fetch(
         `${import.meta.env.VITE_BACKEND_URL}/api/user/signout`,
@@ -42,7 +42,24 @@ export default function Header() {
     } catch (error) {
       console.log(error.message);
     }
-  };
+  };*/
+  const handleSignOut = async () => {
+  try {
+    await fetch(
+      `${import.meta.env.VITE_BACKEND_URL}/api/auth/signout`,
+      {
+        method: 'POST',
+        credentials: 'include',
+      }
+    );
+
+    dispatch(signOutSuccess()); // clear redux user
+    navigate('/sign-in');
+  } catch (error) {
+    console.log(error);
+  }
+};
+
 
   const handleSubmit = (e) => {
     e.preventDefault();

@@ -21,8 +21,7 @@ app.use(
     origin:
       process.env.NODE_ENV === 'production'
         ? [
-            'blog-hive-app.vercel.app',
-            /\.vercel\.app$/,
+            'https://blog-hive-app.vercel.app'
           ]
         : ['http://localhost:5173', 'http://localhost:3000'],
     credentials: true,
